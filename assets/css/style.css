@@ -1,0 +1,53 @@
+#header{
+    color:white;
+    background-color:teal;
+    position: relative;
+}
+
+#header h1{
+    font-size: 70px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.jumbotron {
+    padding: 1rem;
+    border-radius: 0;
+}
+
+label {
+    font-size: 20px;
+}
+
+#current-weather {
+    padding-left: 15px;
+}
+
+#clear-storage{
+    color:black;
+    font-size:20px;
+}
+
+.weather-card{
+    width: 9rem;
+    background-color: teal;
+    color: white;
+    text-align: center;
+}
+
+/* Media queries */
+@media only screen and (max-width: 992px) {
+    #search-city{
+        width:100%;
+    }
+    #search-button{
+        width:100%;
+    }
+}
+@media only screen and (max-width: 575px) {
+
+    #fiveDayForecastUl{
+        justify-content: center;
+    }
+}
