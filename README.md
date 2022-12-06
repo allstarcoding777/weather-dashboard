@@ -8,7 +8,7 @@ While completing this project, I learned how to use bootstrap more effectively.
 
 ## Usage
 
-Type in the name of the city you would like to see the current and 5 day forecast for.
+Type in the name of the city you would like to see the current, and 5 day forecast for.
 
 ![webpage screenshot](assets/images/webpage-screenshot.png)
 
