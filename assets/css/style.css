@@ -1,24 +1,76 @@
-.jumbotron {
+body{
+    
+}
+
+.title {
+    background-image: linear-gradient(to right, orange, purple, blue, orange);
+    color: white;
+}
+
+.city-name{
+    color: black;
+    background-color: white;
+}
+
+img{
+    width: 45px;
+    height: 40px;
+}
+
+.five-day-forecast{
+    padding-top: 40px;
+}
+
+.city-search-heading{
+    padding: 2.5%;
+    margin: 10px;
+}
+
+.searched-city-info {
+    width: 300px;
+    height: 160px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.day-one-card, .day-two-card, .day-three-card, .day-four-card, .day-five-card{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    height: 160px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+input {
+    margin: 10px;
+}
+
+button {
+    display: block;
+    margin: 0 0 0 10px;
+    padding: 0 70px 0 70px;
+    margin-top: 10px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 50px;
+}
+
+.saved-cities {
+    display: block;
+    margin: 0 0 0 10px;
+    padding: 0 70px 0 70px;
 }
 
 .current-weather {
 }
 
-.clear-storage{
+.clear-cities {
 }
 
-/* Media query */
-@media only screen and (max-width: 992px) {
-    .earch-city{
-        width:100%;
-    }
-    .search-button{
-        width:100%;
-    }
-}
-@media only screen and (max-width: 575px) {
 
-    .fiveDayForecastUl{
-        justify-content: center;
-    }
+footer{
+    display: flex;
+    justify-content: center;
 }

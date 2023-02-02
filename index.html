@@ -1,12 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--Google Font stylesheet-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <!--CSS stylesheet-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!--DayJS library -->
+    <script
+    src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+    crossorigin="anonymous"
+    ></script>
     <title>Weather Dashboard</title>
-</head>
+     <!--Google Icons-->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+  
 <body>
+    <header class="title text-center">
+        <h1>Weather Dashboard</h1>
+        <h2>5-Day Weather Forecast</h2>
+        <!--Displays Current Day-->
+        <h5 class="currentDay"></h5>
+    </header>
+    <main class="row">
+      <aside class="col-2">
+          <h3 class="city-search-heading">Search for a City:</h3>
+          <input id="city-input" type="text" placeholder="type here...">
+          <button onclick="getInfo()">Search</button>
+          <div class ="row saved-cities">
+            <div class="city-one">city one</div>
+            <div class="city-two">city two</div>
+            <div class="city-three">city three</div>
+            <div class="city-four">city four</div>
+            <div class="city-five">city five</div>
+            <div class="city-six">city six</div>
+            <div class="city-seven">city seven</div>
+            <div class="city-eight">city eight</div>
+          </div>
+      </aside>
+      <section class="col-10 searched-city-info">
+        <div id="weatherContainer">
+          <div id="iconsContainer">
+        
+            
+        <h3 id="city-name">City Name:</h3>
+        <h6 class="temp">Temp:</h6>
+        <h6 class="wind">Wind:</h6>
+        <h6 class="humidity">Humidity:</h6>
+        <h3 class="five-day-forecast">5-Day Forecast:</h3>
+        <section class="day card-group">
+
+          <h5 class="card day-one-card weather">Day 1
+            <div class="icons">
+            <div class="image"><img src="assets/images/icon.png" class="imgClass" id="img1" alt="weather icon"></div>
+            </div>
+            <p class="minValues" id="day1Min">Loading...</p>
+            <p class="maxValues" id="day1Max">Loading...</p>
+            <div class="temp">Temp:</div>
+            <div class="wind">Wind:</div>
+            <div class="humidity">Humidity:</div>
+          </h5>
+
+        <h5 class="card day-one-card weather">Day 2
+          <div class="icons">
+          <div class="image"><img src="assets/images/icon.png" class="imgClass" id="img2" alt="weather icon"></div>
+          </div>
+        <p class="minValues" id="day2Min">Loading...</p>
+        <p class="maxValues" id="day2Max">Loading...</p>
+        <div class="temp">Temp:</div>
+        <div class="wind">Wind:</div>
+        <div class="humidity">Humidity:</div>
+        </h5>
+
+        <h5 class="card day-one-card weather">Day 3
+          <div class="icons">
+          <div class="image"><img src="assets/images/icon.png" class="imgClass" id="img3" alt="weather icon"></div>
+         </div>
+          <p class="minValues" id="day3Min">Loading...</p>
+      <p class="maxValues" id="day3Max">Loading...</p>
+      <div class="temp">Temp:</div>
+      <div class="wind">Wind:</div>
+      <div class="humidity">Humidity:</div>
+      </h5>
+
+      <h5 class="card day-one-card weather">Day 4
+        <div class="icons">
+        <div class="image"><img src="assets/images/icon.png" class="imgClass" id="img4" alt="weather icon"></div>
+        </div>
+    <p class="minValues" id="day2Min">Loading...</p>
+    <p class="maxValues" id="day4Max">Loading...</p>
+    <div class="temp">Temp:</div>
+    <div class="wind">Wind:</div>
+    <div class="humidity">Humidity:</div>
+    </h5>
+
+    <h5 class="card day-one-card weather">Day 5
+            <div class="icons">
+            <div class="image"><img src="assets/images/icon.png" class="imgClass" id="img5" alt="weather icon"></div>
+            </div>
+        <p class="minValues" id="day5Min">Loading...</p>
+        <p class="maxValues" id="day5Max">Loading...</p>
+        <div class="temp">Temp:</div>
+        <div class="wind">Wind:</div>
+        <div class="humidity">Humidity:</div>
+        </h5>
+
+        </section>
+        </div>
+      </div>
+      </section>
+    </main>
+
+  <!-- <footer>© 2022 Copyright. All Rights Reserved.</footer> -->
+  <!--jQuery Library-->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!--Moment.js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <!--Script File-->
+  <script src="assets/js/script.js"></script>
     
 </body>
 </html>
