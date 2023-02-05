@@ -20,8 +20,7 @@
      <!--Google Icons-->
      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
-  
-<body onload="DefaultScreen()">
+<body>
     <header class="title text-center">
         <h1>Weather Dashboard</h1>
         <h2>5-Day Weather Forecast</h2>
@@ -31,7 +30,7 @@
     <main class="row">
       <aside class="col-2">
           <h3 class="city-search-heading">Search for a City:</h3>
-          <p id="inputContainer">City: <input type="text" id="cityInput"></p>
+          <p id="inputContainer"><input type="text" id="cityInput"></p>
           <button onclick="getInfo()">Search</button>
           <div class ="row saved-cities">
             <div class="city-one">city one</div>
@@ -51,9 +50,9 @@
         <h6 class="temp">Temp:</h6>
         <h6 class="wind">Wind:</h6>
         <h6 class="humidity">Humidity:</h6>
-        <h3 class="five-day-forecast">5-Day Forecast:</h3>
         
         <div id="weatherContainer">
+          <h3 class="five-day-forecast">5-Day Forecast:</h3>
           <div id="iconsContainer">
         <section class="day card-group">
           <h5 class="card day-one-card weather" id="day1">Day 1

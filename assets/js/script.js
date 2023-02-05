@@ -21,7 +21,7 @@ function getInfo(){
         }
     })
     
-    .catch(err => alert("Something Went Wrong"))
+    // .catch(err => alert("Something Went Wrong"))
 }
 
 function DefaultScreen(){
