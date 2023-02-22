@@ -1,15 +1,51 @@
 body{
     
 }
+.city-header {
+    display: flex;
+    justify-content:center ;
+    color: black;
+    text-shadow: 2px 4px 4px rgba(46,91,173,0.6);
+}
+.container{
+    padding: 0;
+}
+
+#city-search-form{
+    text-align: center;
+}
+
+.searchBtn {
+    padding: 0 70px 0 70px;
+    margin-top: 10px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 50px;
+}
+
+.prev-searched-cities{
+    padding-top: 10px;
+}
 
 .title {
     background-image: linear-gradient(to right, orange, purple, blue, orange);
     color: white;
 }
 
-.city-name{
-    color: black;
-    background-color: white;
+.search-column{
+    background-color:	#D3D3D3;
+}
+
+.list-group-item{
+    line-height: 0.5;
+    border: white;
+}
+
+span.favorable{
+    padding: 3px;
+    background-color: blueviolet;
+    color:white;
 }
 
 img{
@@ -46,24 +82,11 @@ input {
     margin: 10px;
 }
 
-button {
-    display: block;
-    margin: 0 0 0 10px;
-    padding: 0 70px 0 70px;
-    margin-top: 10px;
-    background-color: blueviolet;
-    color: white;
-    border: none;
-    border-radius: 50px;
-}
 
 .saved-cities {
     display: block;
     margin: 0 0 0 10px;
     padding: 0 70px 0 70px;
-}
-
-.current-weather {
 }
 
 .clear-cities {

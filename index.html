@@ -24,98 +24,39 @@
     <header class="title text-center">
         <h1>Weather Dashboard</h1>
         <h2>5-Day Weather Forecast</h2>
-        <!--Displays Current Day-->
-        <h5 class="currentDay"></h5>
     </header>
+    <h1 class="city-header"></h1>
     <main class="row">
-      <aside class="col-2">
+      <aside class="col-3">
+        <form class = "border" id = "city-search-form">
           <h3 class="city-search-heading">Search for a City:</h3>
-          <p id="inputContainer"><input type="text" id="cityInput"></p>
-          <button onclick="getInfo()">Search</button>
-          <div class ="row saved-cities">
-            <div class="city-one">city one</div>
-            <div class="city-two">city two</div>
-            <div class="city-three">city three</div>
-            <div class="city-four">city four</div>
-            <div class="city-five">city five</div>
-            <div class="city-six">city six</div>
-            <div class="city-seven">city seven</div>
-            <div class="city-eight">city eight</div>
+          <div class="form-group">
+            <input id="searched-city" class = "form-input" placeholder="type city name..."/>
           </div>
-      </aside>
-      <section class="col-10 searched-city-info">
-        
-        
-        <h3 id="cityName"></h3>
-        <h6 class="temp">Temp:</h6>
-        <h6 class="wind">Wind:</h6>
-        <h6 class="humidity">Humidity:</h6>
-        
-        <div id="weatherContainer">
-          <h3 class="five-day-forecast">5-Day Forecast:</h3>
-          <div id="iconsContainer">
-        <section class="day card-group">
-          <h5 class="card day-one-card weather" id="day1">Day 1
-            <div class="icons">
-            <div class="image"><img src="assets/images/icon.png" class="imgClass" id="img1" alt="weather icon"></div>
-            <p class="minValues" id="day1Min">Loading...</p>
-            <p class="maxValues" id="day1Max">Loading...</p>
-            <div class="temp">Temp:</div>
-            <div class="wind">Wind:</div>
-            <div class="humidity">Humidity:</div>
+          <div class="form-group">
+            <button class ="text-center searchBtn" type = "submit">Search</button>
           </div>
-          </h5>
-
-          <h5 class="card day-one-card weather" id="day2">Day 2
-            <div class="icons">
-            <div class="image"><img src="assets/images/icon.png" class="imgClass" id="img2" alt="weather icon"></div>
-            <p class="minValues" id="day2Min">Loading...</p>
-            <p class="maxValues" id="day2Max">Loading...</p>
-            <div class="temp">Temp:</div>
-            <div class="wind">Wind:</div>
-            <div class="humidity">Humidity:</div>
-          </div>
-          </h5>
-
-          <h5 class="card day-one-card weather" id="day3">Day 3
-            <div class="icons">
-            <div class="image"><img src="assets/images/icon.png" class="imgClass" id="img3" alt="weather icon"></div>
-            <p class="minValues" id="day3Min">Loading...</p>
-            <p class="maxValues" id="day3Max">Loading...</p>
-            <div class="temp">Temp:</div>
-            <div class="wind">Wind:</div>
-            <div class="humidity">Humidity:</div>
-          </div>
-          </h5>
-
-          <h5 class="card day-one-card weather" id="day4">Day 4
-            <div class="icons">
-            <div class="image"><img src="assets/images/icon.png" class="imgClass" id="img4" alt="weather icon"></div>
-            <p class="minValues" id="day4Min">Loading...</p>
-            <p class="maxValues" id="day4Max">Loading...</p>
-            <div class="temp">Temp:</div>
-            <div class="wind">Wind:</div>
-            <div class="humidity">Humidity:</div>
-          </div>
-          </h5>
-
-          <h5 class="card day-one-card weather" id="day5">Day 5
-            <div class="icons">
-            <div class="image"><img src="assets/images/icon.png" class="imgClass" id="img5" alt="weather icon"></div>
-            <p class="minValues" id="day5Min">Loading...</p>
-            <p class="maxValues" id="day5Max">Loading...</p>
-            <div class="temp">Temp:</div>
-            <div class="wind">Wind:</div>
-            <div class="humidity">Humidity:</div>
-          </div>
-          </h5>
-      </div>
-    </div>
-
+          <p class="prev-searched-cities">-Previously Searched Cities-</p>
+          <div class = "row saved-cities past-search border" id = "past-city-buttons"></div>
+        </form>
+        </aside>
+      <section class="col-9">
+        <section class = "row border" id = "current-forecast">
+            <section class = "col-12">
+                <h2 id="searched-city"></h2>
+                <!--Displays Current Day-->
+        <h5 class="currentDay"></h5>
+                <div id = "current-weather-container" class = "list-group"></div>
+            </div>  
         </section>
-      </section>
+        <div class = "row" id = "five-day-forecast">
+          <h2 class= "col-12" id = "forecast-header"></h2>
+                <div class = "d-flex" id = "fiveday-container"></div>
+        </div>
+        </section>  
+    </section>
+          </section>
     </main>
-
   <!-- <footer>© 2022 Copyright. All Rights Reserved.</footer> -->
   <!--jQuery Library-->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
