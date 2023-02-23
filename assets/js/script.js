@@ -161,6 +161,7 @@ let display5Days = function(weather){
 
        //create date element
        let fiveDayDates = document.createElement("h5")
+
        //moment.unix converts the date from unix to a readable format
        fiveDayDates.textContent= moment.unix(dailyForecast.dt).format("MMM D, YYYY");
        fiveDayDates.classList = "card-header text-center"
@@ -175,6 +176,7 @@ let display5Days = function(weather){
         //append to forecast card
         fiveDayForecast.appendChild(forecastTempEl);
 
+       //create humidity span
        let forecastHumEl=document.createElement("span");
        forecastHumEl.classList = "card-body text-center";
        forecastHumEl.textContent = "Humidity: " + dailyForecast.main.humidity + "  %";
@@ -190,6 +192,6 @@ let display5Days = function(weather){
 // Displays searched city weather information when 'Search' button is clicked
 cityForm.addEventListener("submit", citySearchHandler);
 
-// Displays city weather information
+// Displays city weather information when past city button is clicked
 pastCityButtonEl.addEventListener("click", pastSearchHandler);
 
